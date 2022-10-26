@@ -38,6 +38,60 @@ void Screen::clear() {
 	for (int i = 0; i < 9; i++) {
 		print("                                             ");
 	}
+	set(INIT_X, INIT_Y);
+	gotoxy();
+}
+
+//呪発
+// 覗傾績 窒径
+void Screen::print_frame() {
+	system("cls");
+	cout << "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　                         　　 　　　　　　＝" << endl;
+	cout << "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝" << endl;
+	cout << "＝  　　　　　　　                                                                              ＝" << endl;
+	cout << "＝     　　                                                                                     ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝                                                                                              ＝" << endl;
+	cout << "＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝" << endl;
+}
+// 努什闘 但 走酔奄
+void Screen::text_clear() {
+	pos.X = TEXT_INIT_X;
+	pos.Y = TEXT_INIT_Y;
+	for (int i = 0; i < 20; i++) {
+		print("                                                                                          ");
+	}
+	set(TEXT_INIT_X, TEXT_INIT_Y);
+	gotoxy();
 }
 
 int Screen::KeyIn() {

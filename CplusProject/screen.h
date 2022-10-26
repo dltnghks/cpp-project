@@ -24,6 +24,11 @@ public:
 	static void line_print(string str); // 한 줄씩 출력
 	static void print(string str); // 출력
 	static void gotoxy();	// 커서 이동
+
 	static void clear();	// 선택지 지우기
+	// 수환
+	static void print_frame(); // 프레임 출력
+	static void text_clear(); // 텍스트 창 지우기
+
 	static int KeyIn();	// 키 입력
 };

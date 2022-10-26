@@ -15,6 +15,16 @@ void Player::set(Room* room) {
 Room* Player::get_current_room() {
 	return this->current_room;
 }
+
+Room* Player::get_pre_room() {
+	return this->pre_room;
+}
+
+void Player::take_damage(int damage) {
+	this->hp -= damage;
+}
+
+
 // 플레이어 이동가능한 방 출력
 void Player::get_print_move_room() {
 	int i = 0;
@@ -26,11 +36,15 @@ void Player::get_print_move_room() {
 	}
 }
 
+
+
 // 방 이동 (현재 방의 링크 방에 없으면 이동 X)
 void Player::move(Room* room) {
 	if (room != NULL) {
-		if (current_room->check_link_room(room))
+		if (current_room->check_link_room(room)) {
+			pre_room = current_room;
 			this->current_room = room;
+		}
 		else
 			cout << "갈 수 없는 방입니다." << endl;
 	}

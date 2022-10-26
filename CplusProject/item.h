@@ -15,11 +15,17 @@ using namespace std;
 class Item {
 	string name; // 이름
 	Item* link; // 다음 아이템(인벤토리에서 연결리스트로 찾기 위함.)
+	Item* pre;
 public:
 	Item() : Item("None"){}
 	Item(string name) {
 		this->name = name;
-		this->link = NULL;
+		this->link = this;
+		this->pre = this;
+	}
+
+	void set_pre(Item* pre) {
+		this->pre = pre;
 	}
 
 	void set_link(Item* link) {
@@ -32,5 +38,9 @@ public:
 
 	Item* get_link() {
 		return this->link;
+	}
+
+	Item* get_pre() {
+		return this->pre;
 	}
 };

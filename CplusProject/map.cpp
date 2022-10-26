@@ -11,7 +11,7 @@ void Map::set() {
 						"1층 중앙복도" };
 	string room_2[ROOMSIZE2] = { "1-1", "1-2", "1-3", "2-1", "2-2", "2-3", "2층 서편",
 						"2층 중앙복도",
-						"2층 동편", "화장실" , "세탁실", "격리 생활관", "2중대 행정반", "통신물자 창고" };
+						"2층 동편", "화장실" , "세탁실", "격리 생활관", "간부 연구실" ,"2중대 행정반"};
 
 	/****************************
 			방 생성
@@ -63,9 +63,10 @@ void Map::set() {
 	}
 
 	// 2층 동편, 5개 방
+	link_size = 5;
 	tmp = find_room("2층 동편");
-	string* floor2_east_list = new string[link_size]{ "화장실" , "세탁실", "격리 생활관", 
-													  "2중대 행정반", "통신물자 창고"};
+	string* floor2_east_list = new string[link_size]{ "화장실" , "세탁실", "격리 생활관","간부 연구실",
+													  "2중대 행정반"};
 
 	tmp->set_link_size(link_size);
 	for (int i = 0; i < link_size; i++) {

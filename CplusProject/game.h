@@ -24,9 +24,13 @@ public:
 	}
 	int getch(); // 입력받고 버퍼 제거
 
-	void selection(); // 선택지
-	int choose(int max);
-	void selection_search(); // 수색 선택
+	// 수환
+	void print_intro(); //인트로 출력
+
+	//수환
+	int selection(); // 선택지
+
+	static int choose(int max); // 0~max-1 중 하나 선택
 	void selection_move(); // 이동 선택
 
 };
