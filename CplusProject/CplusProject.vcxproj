@@ -147,6 +147,7 @@
     <ClInclude Include="map.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="room.h" />
+    <ClInclude Include="screen.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="event.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="map.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="room.cpp" />
+    <ClCompile Include="screen.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

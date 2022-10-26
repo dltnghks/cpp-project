@@ -13,17 +13,16 @@ void Player::set(Room* room) {
 // get
 // 플레이어 현재 위치 get
 Room* Player::get_current_room() {
-	cout << "현재 플레이어 위치 : " << this->current_room->get_name() << endl;
 	return this->current_room;
 }
 // 플레이어 이동가능한 방 출력
 void Player::get_print_move_room() {
 	int i = 0;
 	for (i = 0; i < this->current_room->get_link_size(); i++) {
-		cout << i + 1 << " : " << this->current_room->get_link_room(i) << endl;
+		Screen::print("[" + to_string((i + 1)) + "] " + this->current_room->get_link_room(i));
 	}
 	if (this->current_room->check_parent_room()) {
-		cout << i + 1 << " : " << this->current_room->get_parent_room() << endl;
+		Screen::print("[" + to_string((i + 1)) + "] " + this->current_room->get_parent_room());
 	}
 }
 

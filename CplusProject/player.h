@@ -3,6 +3,7 @@
 #include <string>
 #include "room.h"
 #include "inventory.h"
+#include "screen.h"
 
 using namespace std;
 
