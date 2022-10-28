@@ -75,6 +75,9 @@ int Game::selection() {
 		selection_move();
 		return 1;
 	}
+	else if(input == MAP){
+		return MAP;
+	}
 }
 
 int Game::choose(int max) {
@@ -85,6 +88,11 @@ int Game::choose(int max) {
 		Screen::gotoxy();
 		cout << ">";
 		int key = Screen::KeyIn();
+		// 맵 출력을 입력받으면
+		if (key == MAP) {
+			return MAP;
+		}
+
 		if (key == ENTER)
 			return input;
 		else if (key == UP && Screen::get_y() >= INIT_Y) {

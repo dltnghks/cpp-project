@@ -31,4 +31,6 @@ public:
 	static void text_clear(); // 텍스트 창 지우기
 
 	static int KeyIn();	// 키 입력
+
+	static void print_map(); // 맵 출력
 };

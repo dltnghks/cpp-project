@@ -18,3 +18,5 @@
 #define DOWN 80
 #define ENTER 13
 
+// Ãâ·Â
+#define MAP 10

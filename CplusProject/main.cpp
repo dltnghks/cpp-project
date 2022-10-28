@@ -39,6 +39,9 @@ int main() {
 		else if (input == 1) {
 			event.event();
 		}
+		else if (input == MAP) {
+			Screen::print_map();
+		}
 		system("cls");
 	}
 }
