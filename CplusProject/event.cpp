@@ -9,7 +9,9 @@
 */
 
 // 수환
-// 현재 방 텍스트 출력
+/**************************************************
+				현재 방 텍스트 출력
+***************************************************/
 void Event::current_room_event() {
 	string room_name = this->player->get_current_room()->get_name();
 	Screen::text_clear();
@@ -81,52 +83,94 @@ void Event::current_room_event() {
 		Screen::print("어디선가 반복적인 기계음이 계속 들린다.");
 	}
 
-
-
-
+	else if (room_name == "2층 서편") {
+		Screen::print("[2층 서편]");
+	}
 	else if (room_name == "1-1") {
-		// 손전등
-	}
-	else if (room_name == "1-2") {
-		// 야채 건빵
-	}
-	else if (room_name == "1-3") {
-		// 몽키 스패너
-	}
-	else if (room_name == "2-1") {
-		// 터보 라이터
-	}
-	else if (room_name == "2-2") {
-		// 붕대
-	}
-	else if (room_name == "2-3") {
-		// 손소독제
-	}
+      // 손전등
+      Screen::print("[1-1 생활관]");
+      Screen::print("복도 제일 끝 생활관이라 그런지 햇볕이 잘 들어오지 않는다.");
+      Screen::print("벽 군데군데 곰팡이가 피어있다.");
+   }
+   else if (room_name == "1-2") {
+      // 야채 건빵
+      Screen::print("[1-2 생활관]");
+      Screen::print("항상 물만 묻히고 안씻는 이혜성 상병이 있던 곳이다.");
+      Screen::print("들어서자마자 꼬랑내 때문에 구역질이 난다.");
+   }
+   else if (room_name == "1-3") {
+      // 몽키 스패너
+      Screen::print("[1-3 생활관]");
+      Screen::print("항상 시끄러운 반이었지만 지금은 매우 조용하다.");
+      Screen::print("이상할 정도로 조용한 것이 좀비가 있는 것 같다.");
+      Screen::print("좀비가 구석 한켠에 쳐박혀 앉아있다.");
+   }
+   else if (room_name == "2-1") {
+      // 붕대
+      Screen::print("[2-1 생활관]");
+      Screen::print("기독교 신자가 유난히 많았던 방...");
+      Screen::print("아무리 둘러봐도 성경과 십자가는 안보인다.");
+      Screen::print("하느님이 아니라 싸이버거를 굳게 믿었던 것 같다.");
+   }
+   else if (room_name == "2-2") {
+      // 터보 라이터
+      Screen::print("[2-2 생활관]");
+      Screen::print("끼-----------이이이이이익----------");
+      Screen::print("문을 열자마자 숨어있던 좀비가 공격해온다!");
+   }
+   else if (room_name == "2-3") {
+      // 손소독제
+      Screen::print("[2-3 생활관]");
+      Screen::print("알코올 냄새가 코를 뻥 뚫어주는 것 같다.");
+      Screen::print("항상 청결한 생활관이다.");
+   }
 
 
 
-	// 1층 중앙복도
-	else if (room_name == "총기함실") {
-
+   // 1층 중앙복도
+   else if (room_name == "1층 중앙복도") {
+		Screen::print("[1층 중앙복도]");
 	}
-	else if (room_name == "인사과") {
-
-	}
-	else if (room_name == "지휘통제실") {
-
-	}
-	else if (room_name == "군수과") {
-
-	}
-	else if (room_name == "대대장실") {
-
-	}
-	else if (room_name == "주임원사실") {
-
-	}
+   else if (room_name == "총기함실") {
+      Screen::print("[총기함실]");
+      Screen::print("총기함실이다.");
+      Screen::print("WD냄새와 쇳덩이 냄새들이 난다.");
+   }
+   else if (room_name == "인사과") {
+      Screen::print("인사과장이 1년 동안 결산하지 않은 부대 체육 리그 점수표가 정면에 보인다.");
+      Screen::print("한켠에는 아직 개봉되지 않은 택배 상자들이 쌓여있다.");
+      Screen::print("어딘가에 [총기함 키]가 있을 것이다.");
+   }
+   else if (room_name == "지휘통제실") {
+      Screen::print("[지휘 통제실]");
+      Screen::print("항상 간부들이 북적거리던 곳이다.");
+      Screen::print("CCTV 감시 화면 곳곳에 좀비들 모습이 보인다.");
+      Screen::print("옥상에는 좀비가 없는 것 같다.");
+      Screen::print("그런데... 뭔가 이상하다.");
+      Screen::print("내가 보이는 화면에 이상한 형체가 같이 있다.");
+      Screen::print("쿠당탕!");
+      Screen::print("갑자기 뒤에서 좀비 한 마리가 달려든다.");
+   }
+   else if (room_name == "군수과") {
+      Screen::print("[군수과]");
+      Screen::print("대대장의 총애를 받던 군수과장이 있던 곳이다.");
+      Screen::print("지독한 사람이었다.");
+      Screen::print("책상 위에는 군수과장의 아들내미 사진이 보인다.");
+      Screen::print("옆에는 달력이 있다.");
+      Screen::print("[*8월 10일, 대대장님 생신*]");
+   }
+   else if (room_name == "대대장실") {
+      Screen::print("[대대장실]");
+      Screen::print("문이 잠겨있다.... [부재중]...");
+   }
+   else if (room_name == "주임원사실") {
+   // 처음 : 부재중, 한바탕 소란이 끝나고 다시 갔을 때 열림
+      Screen::print("[주임원사실]");
+   }
 }
-
-// 탐색 이벤트
+/**************************************************
+				탐색 이벤트
+***************************************************/
 void Event::search_event() {
 	string room_name = this->player->get_current_room()->get_name();
 	Screen::text_clear();
@@ -177,47 +221,68 @@ void Event::search_event() {
 
 
 	else if (room_name == "1-1") {
-		// 손전등
+		// 전투 식량 파운드 케이크 발견
+		Screen::line_print("[전투 식량 파운트 케이크]를 발견했다.");
+		player->get_bag()->insert_item("[전투 식량 파운드 케이크]");
 	}
 	else if (room_name == "1-2") {
 		// 야채 건빵
+		Screen::line_print("[야채 건빵 한 봉지]를 발견했다.");
+		player->get_bag()->insert_item("[야채 건빵 한 봉지]");
 	}
 	else if (room_name == "1-3") {
 		// 몽키 스패너
+		Screen::line_print("[몽키 스패너]를 발견했다.");
+		player->get_bag()->insert_item("[몽키 스패너]");
 	}
 	else if (room_name == "2-1") {
-		// 터보 라이터
+		// 성경책
+		Screen::line_print("[두꺼운 성경책]를 발견했다.");
+		player->get_bag()->insert_item("[두꺼운 성경책]");
 	}
 	else if (room_name == "2-2") {
 		// 붕대
+		Screen::line_print("[붕대]를 발견했다.");
+		player->get_bag()->insert_item("[붕대]");
 	}
 	else if (room_name == "2-3") {
 		// 손소독제
+		Screen::line_print("[손 소독제]를 발견했다.");
+		player->get_bag()->insert_item("[손 소독제]");
 	}
 
 
 
 	// 1층 중앙복도
 	else if (room_name == "총기함실") {
-
+		
 	}
 	else if (room_name == "인사과") {
-
+		// 총기함 키, 구급약 키트
+		Screen::line_print("[총기함 키]를 발견했다.");
+		Screen::line_print("[구급약 키트]를 발견했다.");
+		player->get_bag()->insert_item("[총기함 키]");
+		player->get_bag()->insert_item("[구급약 키트]");
 	}
 	else if (room_name == "지휘통제실") {
-
+		Screen::line_print("좀비가 입고있던 전투복에서 [주임원사실 열쇠]를 발견했다.");
+		Screen::line_print("주임원사실에 들어갈 수 있을 것이다.");
+		player->get_bag()->insert_item("[주임원사실 열쇠]");
 	}
 	else if (room_name == "군수과") {
-
+		Screen::line_print("[어딘가 중요해 보이는 열쇠]를 발견했다.");
+		player->get_bag()->insert_item("[어딘가 중요해 보이는 열쇠]");
 	}
 	else if (room_name == "대대장실") {
-
+		// 탐색 이벤트 X
+		Screen::line_print("딱히 무언가 보이지 않는다.");
 	}
 	else if (room_name == "주임원사실") {
-
+		
 	}
 	else if (room_name == "통신물자 창고") {
-
+		Screen::line_print("[노트북과 연결 포트]를 발견했다.");
+		player->get_bag()->insert_item("[노트북과 연결 포트]");
 	}
 	is_search_event[room_name] = true;
 }
@@ -253,7 +318,7 @@ void Event::event() {
 	else if (room_name == "2중대 행정반") {
 		// 이동이벤트 X
 	}else if (room_name == "간부 연구실") {
-
+		// 이동이벤트 X
 	}
 
 
@@ -268,47 +333,54 @@ void Event::event() {
 
 
 	else if (room_name == "1-1") {
-		// 손전등
+		// 이동이벤트 X
 	}
 	else if (room_name == "1-2") {
-		// 야채 건빵
+		// 이동이벤트 X
 	}
 	else if (room_name == "1-3") {
-		// 몽키 스패너
+		// 나를 눈치 채지 못한 좀비
+		zombie_event1_3();
 	}
 	else if (room_name == "2-1") {
-		// 터보 라이터
+		// 이동이벤트 X
 	}
 	else if (room_name == "2-2") {
-		// 붕대
+		// 숨어있던 좀비의 공격
+		zombie_event2_2();
 	}
 	else if (room_name == "2-3") {
-		// 손소독제
+		// 이동이벤트 X
 	}
 
 
 	
 	// 1층 중앙복도
+	else if (room_name == "1층 중앙복도") {
+		// 이동이벤트 X
+	}
 	else if (room_name == "총기함실") {
-
+		// 총기함 키 있는 경우 없는 경우 이벤트
 	}
 	else if (room_name == "인사과") {
-
+		// 이동이벤트 X
 	}
 	else if (room_name == "지휘통제실") {
-
+		// 지휘통제실 이벤트
+		control_center_room();
 	}
 	else if (room_name == "군수과") {
-
+		// 이동이벤트 X
 	}
 	else if (room_name == "대대장실") {
-
+		// 이동이벤트 X
 	}
 	else if (room_name == "주임원사실") {
-
+		// 경비 시스템
+		sergeant_major();
 	}
 	else if (room_name == "통신물자 창고") {
-
+		// 이동이벤트 X
 	}
 }
 
@@ -407,7 +479,7 @@ void Event::mid_way_2() {
 			Screen::line_print("[부러진 대걸레]를 잃었다.");
 			player->get_bag()->delete_item("[부러진 대걸레]");
 			Screen::print("더 이상 미동이 없다.");
-			Screen::print("이제 다른 곳으로 이동해야 할 것 같다.");
+			Screen::line_print("이제 다른 곳으로 이동해야 할 것 같다.");
 		}
 		else {
 			// 2층 서편으로 도망, HP 감소
@@ -437,3 +509,184 @@ void Event::mid_way_2() {
 	}
 	this->is_move_event["2층 중앙복도"] = true;
 }
+
+// 1-3 눈치 채지 못한 좀비
+void Event::zombie_event1_3() {
+	Screen::print("1 - 3반..항상 시끄러운 반이었지만 지금은 매우 조용하다.");
+	Screen::print("이상할 정도로 조용한 것이 좀비가 있는 것 같다.");
+	Screen::print("좀비가 구석 한켠에 처박혀 앉아 있다.");
+
+	Screen::clear();
+	Screen::print("[1] 맞서 싸운다.");
+	Screen::print("[2] 도망간다");
+	int input = Game::choose(2);
+	// 맞서 싸운다
+	Screen::text_clear();
+	if (input == 0) {
+		Screen::print("살...금...살...금...");
+		Screen::print("푸드드득 우직 꾸엑!");
+		Screen::print("좀비의 목을 힘껏 비틀어 제껴버렸다.");
+		Screen::line_print("사시나무처럼 떨고 있다.");
+		player->move(_map->find_room("2층 서편"));
+		this->is_move_event["1-3"] = true;
+	}
+	// 도망간다.
+	else if (input == 1) {
+		Screen::print("조용히 나가야겠다.");
+		Screen::print("한이 많이 쌓인 좀비임이 분명하다.");
+		Screen::line_print("최대한 소리가 안나게 문을 닫고 나왔다.");
+	}
+}
+
+
+// 2-2 눈치 채지 못한 좀비
+void Event::zombie_event2_2() {
+	Screen::print("2-2반이라.....");
+	Screen::print("끼-----------이이이이이익--------------");
+	Screen::print("문을 열자마자 숨어있던 좀비가 공격해온다!");
+
+	Screen::clear();
+	Screen::print("[1] 맞서 싸운다.");
+	Screen::print("[2] 도망간다");
+	int input = Game::choose(2);
+	Screen::text_clear();
+	// 맞서 싸운다
+	if (input == 0) {
+		Screen::print("좀비가 멍청해서 그대로 벽에 머리를 박고 죽었다.");
+		Screen::print("반사신경으로 재빠르게 공격을 피했다.");
+		Screen::line_print("잘못하면 목을 내어주고 좀비로 진급할 뻔했다.");
+		this->is_move_event["2-2"] = true;
+	}
+	// 도망간다.
+	else if (input == 1) {
+		Screen::print("잘못하면 목을 내어주고 좀비로 진급할 뻔했다.");
+		Screen::print("바로 문을 닫고 나왔다.");
+		Screen::print("공격을 피하느라 벽에 몸을 부딛혔다.");
+		Screen::print("더 이상 쫓아오지는 않는 것 같다.");
+		Screen::line_print("경미한 부상을 입었다.");
+		player->take_damage(2); // 부상
+		player->move(_map->find_room("2층 서편"));
+		this->is_move_event["2-2"] = true;
+	}
+}
+
+// 지휘통제실 강력한 좀비
+void Event::control_center_room() {
+	Screen::print("항상 간부들이 북적거리던 곳이다.");
+	Screen::print("CCTV 감시 화면 곳곳에 좀비들 모습이 보인다..");
+	Screen::print("옥상에는 좀비가 없는 것 같다.");
+	Screen::print("2-2반이라.....");
+	Screen::print("그런데... 뭔가 이상하다.");
+	Screen::print("내가 보이는 화면에 이상한 형체가 같이 있다.");
+	Screen::print("쿠당탕!");
+	Screen::print("갑자기 뒤에서 좀비 한 마리가 달려든다.");
+	Screen::clear();
+	Screen::print("[1] 맞서 싸운다.");
+	Screen::print("[2] 도망간다");
+	int input = Game::choose(2);
+	Screen::text_clear();
+	// 맞서 싸운다.
+	if (input == 0) {
+		//무기가 있는 경우
+		if (player->get_bag()->get_check_item("[부러진 대걸레]") ||
+			player->get_bag()->get_check_item("[몽키 스패너]") ||
+			player->get_bag()->get_check_item("[K2 소총]") ||
+			player->get_bag()->get_check_item("[권총과 탄창]") ||
+			player->get_bag()->get_check_item("[두꺼운 성경책]")
+			) {
+			// 큰 부상을 당함(체력 감소)
+			Screen::print("좀비가 매우 강력해보인다.");
+			Screen::print("간신히 제압했다.");
+			Screen::print("하마터면 엔딩도 보기전에 죽을 뻔했다.");
+			Screen::print("머리가 조금 찢어진 것 같다.");
+			Screen::line_print("큰 부상을 입었다.");
+			player->take_damage(5);
+			is_move_event["지휘통제실"] = true;
+		}
+		// 무기가 없는 경우
+		else {
+			Screen::print("헉,,,헉,,,역시 맨손으로는 무리였다.");
+			Screen::print("자세히 보니 주임원사님의 얼굴을 꼭 빼닮은 것 같다.");
+			Screen::print("지금이라도 도망쳐야 할 것 같다.");
+			Screen::print("어라..?점점 의식이 흐려진다.");
+			Screen::line_print("쿨럭,,");
+			// 사망
+			exit(1);
+		}
+	}
+	// 도망간다
+	else if (input == 1) {
+		Screen::line_print("1층 중앙복도로 도망갔다.");
+		player->move(_map->find_room("1층 중앙복도"));
+	}
+}
+
+// 주임원사실 이벤트
+void Event::sergeant_major() {
+	int input = 0;
+	// 열쇠가 없는 경우
+	Screen::text_clear();
+	if (!player->get_bag()->get_check_item("[주임원사실 열쇠]")) {
+		Screen::print("[주임원사실]");
+		Screen::print("철컥 철컥 문이 잠겨있다.");
+		Screen::print("열쇠가 필요하다.");
+		Screen::print("삐--용--삐--용--삐--용--삐--용--");
+		Screen::print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		Screen::print("갑자기 비상벨이 울린다.");
+		Screen::print("좀비들이 몰려오는 소리가 들린다.");
+		Screen::print("빨리 도망치거나 숨어야 할 것 같다.");
+		Screen::clear();
+		Screen::print("[1] 주변에 몸을 숨긴다.");
+		Screen::print("[2] 도망간다.");
+		input = Game::choose(2);
+		Screen::text_clear();
+		// 주변에 몸을 숨긴다.
+		if (input == 0) {
+			Screen::print("일단 락커에 몸을 숨겼다.");
+			Screen::print("좀비들의 발소리가 점점 가까워진다.");
+			Screen::print("숨을 참아도 심장 소리는 더 커지는 것 같다....");
+			Screen::print("쿵쾅쿵쾅쿵쾅쿵쾅쿵쾅쿵쿵쾅쾅....");
+			Screen::print("쿵쾅..쿵쾅..쿵..쿵..쿵...쾅...쾅....");
+			Screen::print("쿵...쾅...쿵...쾅...쿵..........");
+			Screen::print("휴 다행히 좀비 소리가 다시 멀어졌다.");
+			Screen::line_print("이제 밖으로 나가서 동태를 살펴봐야겠다.");
+			player->move(_map->find_room("1층 중앙복도"));
+		}
+		// 도망간다.
+		else if (input == 1) {
+			Screen::print("황급히 주임원사실 밖으로 뛰쳐나왔다.");
+			Screen::print("하지만 이미 늦었다..");
+			Screen::print("좀비들이 나의 앞을 가로막고 있다.");
+			Screen::print("으드득으드득..으드득으드득.....");
+			Screen::print("혈관을 타고 뜨거운 수증기가 발 끝부터 머리 끝까지 차오르는 느낌이 든다.");
+			Screen::line_print("세상이 불그노르스름해졌다. 그를ㄹㄹㄹㄹ");
+			exit(1);
+		}
+	}
+	// 열쇠가 있는 경우
+	else {
+		Screen::clear();
+		Screen::print("[1] 금고를 열어본다.");
+		Screen::print("[2] 건들지 않고 떠난다.");
+		input = Game::choose(2);
+		Screen::text_clear();
+		// 금고 열기
+		if (input == 0) {
+			// [어딘가 중요해 보이는 열쇠]가 있는 경우
+			if (player->get_bag()->get_check_item("[어딘가 중요해 보이는 열쇠]")) {
+				// 권총 탄창 발견
+				// 경비 시스템 이벤트
+			}
+			// [어딘가 중요해 보이는 열쇠]가 없는 경우
+			else {
+				// 돌아가기
+			}
+
+		}
+		// 건들지않고 떠난다.
+		else if (input == 1) {
+
+		}
+	}
+}
+
