@@ -12,6 +12,7 @@ void Map::set() {
 	string room_2[ROOMSIZE2] = { "1-1", "1-2", "1-3", "2-1", "2-2", "2-3", "2Ãþ ¼­Æí",
 						"2Ãþ Áß¾Óº¹µµ",
 						"2Ãþ µ¿Æí", "È­Àå½Ç" , "¼¼Å¹½Ç", "°Ý¸® »ýÈ°°ü", "°£ºÎ ¿¬±¸½Ç" ,"2Áß´ë ÇàÁ¤¹Ý"};
+	string end = "¿Á»ó";
 
 	/****************************
 			¹æ »ý¼º
@@ -26,7 +27,9 @@ void Map::set() {
 		Room* room = new Room(room_2[i]);
 		insert_list(room);
 	}
-
+	// ¿Á»ó ¹æ °´Ã¼ »ý¼º
+	Room* room = new Room(end);
+	insert_list(room);
 	/****************************
 			¹æ ¿¬°á
 	*****************************/ 
@@ -43,10 +46,10 @@ void Map::set() {
 		set_link_rooms(tmp, find_room(floor1_list[i]));
 	}
 
-	// 2Ãþ Áß¾Óº¹µµ, 3°³ ¹æ
-	link_size = 3;
+	// 2Ãþ Áß¾Óº¹µµ, 4°³ ¹æ
+	link_size = 4;
 	tmp = find_room("2Ãþ Áß¾Óº¹µµ");
-	string* floor2_list = new string[link_size]{"2Ãþ ¼­Æí", "2Ãþ µ¿Æí", "1Ãþ Áß¾Óº¹µµ"};
+	string* floor2_list = new string[link_size]{"2Ãþ ¼­Æí", "2Ãþ µ¿Æí", "1Ãþ Áß¾Óº¹µµ", "¿Á»ó"};
 	tmp->set_link_size(link_size);
 	for (int i = 0; i < link_size; i++) {
 		set_link_rooms(tmp, find_room(floor2_list[i]));

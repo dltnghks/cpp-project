@@ -17,7 +17,7 @@ using namespace std;
 
 class Map{
 	int size; // 사이즈 ( 방 개수 )
-	Room* list[ROOMSIZE1+ROOMSIZE2]; // 방 리스트 (1층 방 개수 + 2층 방 개수)
+	Room* list[ROOMSIZE1+ROOMSIZE2+1]; // 방 리스트 (1층 방 개수 + 2층 방 개수 + 옥상)
 
 public:
 	// set

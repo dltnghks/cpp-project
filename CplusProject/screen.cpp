@@ -36,7 +36,7 @@ void Screen::clear() {
 	pos.X = INIT_X-1;
 	pos.Y = INIT_Y;
 	for (int i = 0; i < 9; i++) {
-		print("                                             ");
+		print("                                                                                           ");
 	}
 	set(INIT_X, INIT_Y);
 	gotoxy();
@@ -88,7 +88,7 @@ void Screen::text_clear() {
 	pos.X = TEXT_INIT_X;
 	pos.Y = TEXT_INIT_Y;
 	for (int i = 0; i < 20; i++) {
-		print("                                                                                          ");
+		print("                                                                                           ");
 	}
 	set(TEXT_INIT_X, TEXT_INIT_Y);
 	gotoxy();

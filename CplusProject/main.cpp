@@ -20,8 +20,9 @@ int main() {
 	event.set(&player, &map);
 	game.set(&player, &map);
 
-	//player.get_bag()->insert_item("[칸막이 열쇠]");
-
+	player.get_bag()->insert_item("[칸막이 열쇠]");
+	player.get_bag()->insert_item("[옥상 열쇠]");
+	//player.get_bag()->insert_item("[노트북과 연결 포트]");
 	// 수환
 	game.print_intro(); // 시작화면 출력
 	//event.intro();	// 인트로 출력
