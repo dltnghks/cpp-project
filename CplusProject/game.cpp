@@ -1,4 +1,7 @@
 #include "game.h"
+#include "event.h"
+#include "inventory.h"
+
 
 int Game::getch() {
 	int data;
@@ -6,6 +9,7 @@ int Game::getch() {
 	getchar();
 	return data;
 }
+
 
 // 수환
 void Game::print_intro() {
@@ -66,7 +70,11 @@ int Game::selection() {
 	Screen::gotoxy();
 	Screen::print("[1] 수색하기");
 	Screen::print("[2] 이동하기");
+	
 	int input = 0;
+	Inventory in;
+	Inventory* inven = this->player->get_bag();
+	
 	input = choose(2);
 	if (input == 0) { // 수색하기
 		return 0;
@@ -75,33 +83,46 @@ int Game::selection() {
 		selection_move();
 		return 1;
 	}
-	else if(input == MAP){
+	else if (input == MAP) {
 		return MAP;
 	}
+	else if (input == INVEN)
+	{
+		return INVEN;
+	}
+
 }
 
 int Game::choose(int max) {
 	int input = 0;
+	Inventory inven;
 	int x = INIT_X - 1, y = INIT_Y;
 	while (true) {
 		Screen::set(x, y);
-		Screen::gotoxy();
+		Screen::gotoxy();	
 		cout << ">";
 		int key = Screen::KeyIn();
-		// 맵 출력을 입력받으면
-		if (key == MAP) {
+		if (key == MAP)
+		{
 			return MAP;
 		}
 
+		else if (key == INVEN)
+		{
+			return INVEN;
+		}
+
 		if (key == ENTER)
+		{
 			return input;
+		} 
 		else if (key == UP && Screen::get_y() >= INIT_Y) {
 			// 수환
 			if (Screen::get_y() == INIT_Y) {
 				Screen::gotoxy();
 				cout << " ";
 				y = INIT_Y + max - 1;
-				input = max-1;
+				input = max - 1;
 			}
 			else {
 				Screen::gotoxy();
@@ -113,7 +134,7 @@ int Game::choose(int max) {
 		// 링크 방 개수를 넘어가버리면 안됨
 		else if (key == DOWN && Screen::get_y() <= INIT_Y + max - 1) {
 			// 수환
-			if (Screen::get_y() == INIT_Y + max-1) {
+			if (Screen::get_y() == INIT_Y + max - 1) {
 				Screen::gotoxy();
 				cout << " ";
 				y = INIT_Y;
@@ -141,4 +162,5 @@ void Game::selection_move() {
 
 	int input = choose(max);
 	this->player->move(map->find_room(player->get_current_room()->get_link_room(input)));
+
 }

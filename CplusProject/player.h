@@ -8,9 +8,7 @@
 using namespace std;
 
 /************************************************************************************
-
 						플레이어 정보
-
 ************************************************************************************/
 
 class Player {
@@ -34,13 +32,16 @@ public:
 	}
 	// set
 	void set(Room* room); // 플레이어 세팅
+	
 
 	// get
 	Room* get_current_room(); // 현재 방 위치 get
 	void get_print_move_room(); // 이동가능한 방 출력
+
 	Inventory* get_bag() {	// 가방 get
-		return this->bag;
+		return this->bag;	
 	}
+
 
 	// 수환
 	Room* get_pre_room(); // 이동 전 방 위치 get
@@ -49,4 +50,3 @@ public:
 	// 기능
 	void move(Room* room); // 방 이동
 };
-

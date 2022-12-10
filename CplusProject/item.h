@@ -17,29 +17,34 @@ class Item {
 	Item* link; // 다음 아이템(인벤토리에서 연결리스트로 찾기 위함.)
 	Item* pre;
 public:
-	Item() : Item("None"){}
+	Item() : Item("None") {}
 	Item(string name) {
 		this->name = name;
 		this->link = this;
 		this->pre = this;
 	}
 
+	// 아이템의 pre 세팅
 	void set_pre(Item* pre) {
 		this->pre = pre;
 	}
 
+	// 아이템의 link 세팅
 	void set_link(Item* link) {
 		this->link = link;
 	}
 
+	// 아이템의 name 얻기
 	string get_name() {
 		return this->name;
 	}
 
+	// 아이템의 link 얻기
 	Item* get_link() {
 		return this->link;
 	}
 
+	// 아이템의 pre 얻기
 	Item* get_pre() {
 		return this->pre;
 	}

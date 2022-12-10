@@ -14,7 +14,7 @@ using namespace std;
 
 *******************************************/
 
-class Game {
+class Game{
 	Player* player;
 	Map* map;
 public:
@@ -22,6 +22,7 @@ public:
 		this->player = player;
 		this->map = map;
 	}
+
 	int getch(); // 입력받고 버퍼 제거
 
 	// 수환

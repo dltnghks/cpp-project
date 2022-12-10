@@ -13,6 +13,9 @@
 #define INIT_X 4
 #define INIT_Y 26
 
+#define INVEN_X 15
+#define INVEN_Y 26
+
 // 커서
 #define UP 72
 #define DOWN 80
@@ -20,3 +23,5 @@
 
 // 출력
 #define MAP 10
+#define INVEN 11
+#define CANCEL 12

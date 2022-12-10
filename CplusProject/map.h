@@ -4,6 +4,7 @@
 #include <iostream>
 #include <typeinfo>
 #include <windows.h>
+#include <vector>
 
 #include "define.h"
 #include "room.h"
@@ -15,9 +16,10 @@ using namespace std;
 
 ************************************************************************************/
 
-class Map{
-	int size; // 사이즈 ( 방 개수 )
-	Room* list[ROOMSIZE1+ROOMSIZE2+1]; // 방 리스트 (1층 방 개수 + 2층 방 개수 + 옥상)
+class Map {
+	//int size; // 사이즈 ( 방 개수 )
+	//Room* list[ROOMSIZE1 + ROOMSIZE2]; // 방 리스트 (1층 방 개수 + 2층 방 개수)
+	vector<Room*> list;
 
 public:
 	// set
@@ -38,7 +40,7 @@ public:
 
 /*
 * 방 리스트
-* 
+*
 * 리스트에 방 넣기
 * 리스트에 방 빼기
 * 방 연결

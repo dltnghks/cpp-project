@@ -9,9 +9,7 @@
 using namespace std;
 
 /******************************************
-
 			화면 출력
-
 *******************************************/
 
 class Screen {
@@ -20,6 +18,7 @@ class Screen {
 public:
 	static void set(int x, int y);
 	static int get_y();
+	static int get_y_enter();
 	static int get_x();
 	static void line_print(string str); // 한 줄씩 출력
 	static void print(string str); // 출력
@@ -33,4 +32,5 @@ public:
 	static int KeyIn();	// 키 입력
 
 	static void print_map(); // 맵 출력
+	static void print_inventory(); //인벤토리 출력
 };
