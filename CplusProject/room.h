@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "screen.h"
+
 using namespace std;
 
 /******************************************
@@ -10,7 +12,7 @@ using namespace std;
 *******************************************/
 
 class Room {
-private:
+protected:
 	string name;		//방 이름
 	Room** link_rooms; //이동가능한 방
 	Room* parent;	// 부모 방
@@ -39,6 +41,7 @@ public:
 	bool check_link_room(Room* room); // 방 연결되어 있는지 확인
 	bool check_parent_room(); // 부모 방이 있는지 확인
 
+	virtual void print_myfloor(); // 맵 print할 때 현 위치 출력
 };
 
 

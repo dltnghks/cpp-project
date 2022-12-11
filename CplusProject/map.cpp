@@ -17,16 +17,16 @@ void Map::set() {
 	*****************************/
 	// 1摸 规 按眉 积己
 	for (int i = 0; i < ROOMSIZE1; i++) {
-		Room* room = new Room(room_1[i]);
+		Room* room = new Floor1(room_1[i]);
 		insert_list(room);
 	}
 	// 2摸 规 按眉 积己
 	for (int i = 0; i < ROOMSIZE2; i++) {
-		Room* room = new Room(room_2[i]);
+		Room* room = new Floor2(room_2[i]);
 		insert_list(room);
 	}
 	// 苛惑 规 按眉 积己
-	Room* room = new Room(end);
+	Room* room = new Rooftop(end);
 	insert_list(room);
 	/****************************
 			规 楷搬

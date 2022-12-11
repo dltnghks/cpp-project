@@ -47,6 +47,7 @@ int main() {
 		}
 		else if (input == MAP) {
 			Screen::print_map();
+			player.get_current_room()->print_myfloor();
 		}
 		else if (input == INVEN) {
 			invens->print_inventory();

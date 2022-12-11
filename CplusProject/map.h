@@ -8,6 +8,9 @@
 
 #include "define.h"
 #include "room.h"
+#include "floor1.h"
+#include "floor2.h"
+#include "rooftop.h"
 using namespace std;
 
 /************************************************************************************

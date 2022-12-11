@@ -4,6 +4,8 @@
 using namespace std;
 
 #include "room.h"
+#include "screen.h"
+#include "player.h"
 
 // set 값 세팅
 // 현재 방의 링크 방 설정
@@ -20,8 +22,6 @@ void Room::set_link_room(Room* link) {
 void Room::set_link_size(int size) {
 	this->link_rooms = new Room * [size];
 }
-
-
 
 // get 값 얻기
 // 현재 방 이름 얻기
@@ -56,8 +56,6 @@ string Room::get_parent_room() {
 	cout << "부모노드가 없는데 가져가려고 함." << endl;
 }
 
-
-
 // check 여부 확인
 // 현재 방의 링크 룸에 해당 방이 있는지 확인
 bool Room::check_link_room(Room* room) {
@@ -71,6 +69,11 @@ bool Room::check_link_room(Room* room) {
 bool Room::check_parent_room() {
 	if (this->parent != NULL) return true;
 	return false;
+}
+
+void Room::print_myfloor() {
+	Screen::line_print("현재 1층입니다.");
+	Screen::line_print("현 위치 : " + get_name());
 }
 
 /*
