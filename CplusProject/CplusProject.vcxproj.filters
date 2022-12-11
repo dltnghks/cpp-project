@@ -42,6 +42,15 @@
     <ClInclude Include="screen.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="floor1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="floor2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="rooftop.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -66,6 +75,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="screen.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="floor1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="floor2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="rooftop.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

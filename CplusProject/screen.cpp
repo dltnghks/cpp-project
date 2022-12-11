@@ -168,7 +168,7 @@ void Screen::print_map() {
 	cout << "■                                                                                              ■" << endl;
 	cout << "■                                                                                              ■" << endl;
 	cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
-	Screen::line_print("");
+	//Screen::line_print("");
 }
 
 

@@ -1,3 +1,19 @@
 ﻿  event.cpp
-D:\C플플프로젝트\c-project\CplusProject\event.cpp(710,19): warning C4566: 유니버설 문자 이름 '\u0090'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
-  CplusProject.vcxproj -> D:\C플플프로젝트\c-project\CplusProject\Debug\CplusProject.exe
+D:\C플플프로젝트\c-project\c-project\CplusProject\event.cpp(710,19): warning C4566: 유니버설 문자 이름 '\u0090'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  floor1.cpp
+  floor2.cpp
+  game.cpp
+  inventory.cpp
+D:\C플플프로젝트\c-project\c-project\CplusProject\inventory.cpp(33,8): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+  main.cpp
+  map.cpp
+  player.cpp
+  rooftop.cpp
+  room.cpp
+  screen.cpp
+  코드를 생성하고 있습니다...
+D:\C플플프로젝트\c-project\c-project\CplusProject\room.cpp(57): warning C4715: 'Room::get_parent_room': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\C플플프로젝트\c-project\c-project\CplusProject\inventory.cpp(29): warning C4715: 'Inventory::find_item': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\C플플프로젝트\c-project\c-project\CplusProject\game.cpp(94): warning C4715: 'Game::selection': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  LINK : D:\C플플프로젝트\c-project\c-project\CplusProject\Debug\CplusProject.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  CplusProject.vcxproj -> D:\C플플프로젝트\c-project\c-project\CplusProject\Debug\CplusProject.exe

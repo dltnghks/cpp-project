@@ -141,21 +141,27 @@
   <ItemGroup>
     <ClInclude Include="define.h" />
     <ClInclude Include="event.h" />
+    <ClInclude Include="floor1.h" />
+    <ClInclude Include="floor2.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="rooftop.h" />
     <ClInclude Include="room.h" />
     <ClInclude Include="screen.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="event.cpp" />
+    <ClCompile Include="floor1.cpp" />
+    <ClCompile Include="floor2.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="inventory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="rooftop.cpp" />
     <ClCompile Include="room.cpp" />
     <ClCompile Include="screen.cpp" />
   </ItemGroup>
