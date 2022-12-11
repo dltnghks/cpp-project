@@ -1,0 +1,17 @@
+﻿  event.cpp
+C:\Users\201911183\Desktop\c-project-master\CplusProject\event.cpp(710,19): warning C4566: 유니버설 문자 이름 '\u0090'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  floor1.cpp
+  floor2.cpp
+  game.cpp
+  inventory.cpp
+C:\Users\201911183\Desktop\c-project-master\CplusProject\inventory.cpp(33,8): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+  main.cpp
+  map.cpp
+  player.cpp
+  rooftop.cpp
+  room.cpp
+  코드를 생성하고 있습니다...
+C:\Users\201911183\Desktop\c-project-master\CplusProject\room.cpp(57): warning C4715: 'Room::get_parent_room': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\201911183\Desktop\c-project-master\CplusProject\inventory.cpp(29): warning C4715: 'Inventory::find_item': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\201911183\Desktop\c-project-master\CplusProject\game.cpp(94): warning C4715: 'Game::selection': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  CplusProject.vcxproj -> C:\Users\201911183\Desktop\c-project-master\CplusProject\Debug\CplusProject.exe
